@@ -1,0 +1,384 @@
+/* ライトモード */
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #ffffff;
+  }
+  .title{
+    color:rgb(0, 0, 0);
+  }
+  .content{
+    position: relative;
+    width: 70%;
+    word-wrap: break-word;
+    color:rgb(0, 0, 0);    
+  }
+  /* 項目 */
+  .block{
+    display: flex;
+    justify-content:space-around;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .surround{
+    position: inherit;
+    color:rgb(87, 87, 87);
+    background-color:#79dcfd;
+    border-radius: 30px 20px 30px 20px;
+    width: 400px;
+    font-weight: bold;
+    text-align: center;
+  }
+  /* スマホ時の画面 */
+  @media  (max-width: 500px) {
+    .block{
+      display: block;
+      justify-content:center;
+      margin-left: 10%;
+      margin-right: 10%;
+      }
+    .surround{
+      position: inherit;
+      color:rgb(87, 87, 87);
+      background-color:#79dcfd;
+      border-radius: 30px 20px 30px 20px;
+      width: auto;
+      margin-top: 10px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+
+  }
+    
+  
+  
+  
+  
+  
+  
+  
+  /* モーダルウィンドウ */
+  .modal_open{
+    position:relative;
+    margin: 0 auto;
+    width:30px;
+    background-color: #666;
+    color: #fff;
+  }
+  .modal_open a{
+  
+    padding: 5px;
+    color: #fff;
+  }
+  /*** 以下モーダル用CSS ***/
+  .modal{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: solid 3px rgb(87, 87, 87);
+  
+  }
+  .modal:not(:target) {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+  }
+  .modal:target{
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s, visibility 0.5s;
+  }
+  .modal .overlay{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #000;
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+  }
+
+  .modal_wrapper{
+    width: 100%;
+    max-width: 600px;
+    min-width: 300px;
+    height: 350px;
+    max-height: 550px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 3px rgb(87, 87, 87);
+    border-radius: 30px 20px 30px 20px;
+  
+  
+  }
+  @media  (max-width: 500px) {
+    .modal_wrapper{
+      width: 100%;
+      max-width: 400px;
+      min-width: 300px;
+      height: 350px;
+      max-height: 550px;
+      background-color: #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: solid 3px rgb(87, 87, 87);
+      border-radius: 30px 20px 30px 20px;
+    }
+  }
+  .modal_contents{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+  }
+  .modal_content{
+    margin: 10px;
+    text-align: center;
+    
+  }
+  .modal_content a{
+    position: absolute;
+    font-size: 30px;
+  }
+  .modal_close{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    text-decoration: none;
+  }
+  
+  /* モーダルウィンドウの入力サイズ */
+  .area{
+    position:relative;
+    margin-top: 20px;
+    margin: 25px;
+    height: 170px;
+    width: 540px;
+  }
+  @media  (max-width: 500px) {
+    .area{
+      position:relative;
+      margin-top: 20px;
+      margin: 25px;
+      height: 170px;
+      width: 350px;
+    }
+  }
+
+  
+  
+  .model_button{
+    border: solid 3px rgb(87, 87, 87);
+  
+  }
+
+
+}
+
+
+/* ダークモード */
+@media (prefers-color-scheme: dark) {
+body {
+  background-color: #4f4f4f;
+}
+.title{
+  color:aliceblue;
+}
+.content{
+  position: relative;
+  width: 70%;
+  word-wrap: break-word;
+  color:aliceblue;
+}
+
+.block{
+  display: flex;
+  justify-content:space-around;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.surround{
+  position: inherit;
+  color:rgb(87, 87, 87);
+  background-color:rgb(198, 198, 198);
+  border-radius: 30px 20px 30px 20px;
+  width: 400px;
+  margin: 2em 0;
+  font-weight: bold;
+  text-align: center;
+  border: solid 3px rgb(87, 87, 87);
+}
+@media  (max-width: 500px) {
+  .block{
+    display: block;
+    justify-content:center;
+    margin-left: 10%;
+    margin-right: 10%;
+    }
+  .surround{
+    position: inherit;
+    color:rgb(87, 87, 87);
+    background-color:rgb(198, 198, 198);
+    border-radius: 30px 20px 30px 20px;
+    width: auto;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+    border: solid 3px rgb(87, 87, 87);
+  }
+
+
+}
+
+  
+  
+
+
+
+
+
+
+
+
+.modal_open{
+  position:relative;
+  margin: 0 auto;
+  width:30px;
+  background-color: #666;
+  color: #fff;
+}
+.modal_open a{
+
+  padding: 5px;
+  color: #fff;
+}
+/*** 以下モーダル用CSS ***/
+.modal{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border: solid 3px rgb(87, 87, 87);
+
+}
+.modal:not(:target) {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+.modal:target{
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+.modal .overlay{
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #000;
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+}
+.modal_wrapper{
+  width: 100%;
+  max-width: 600px;
+  min-width: 300px;
+  height: 350px;
+  max-height: 550px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: solid 3px rgb(87, 87, 87);
+  border-radius: 30px 20px 30px 20px;
+
+
+}
+
+@media  (max-width: 500px) {
+  .modal_wrapper{
+    width: 100%;
+    max-width: 400px;
+    min-width: 300px;
+    height: 350px;
+    max-height: 550px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 3px rgb(87, 87, 87);
+    border-radius: 30px 20px 30px 20px;
+  }
+}
+
+
+.modal_contents{
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+.modal_content{
+  margin: 10px;
+  text-align: center;
+  
+}
+.modal_content a{
+  position: absolute;
+  font-size: 30px;
+}
+.modal_close{
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  text-decoration: none;
+}
+
+
+.area{
+  position:relative;
+  margin-top: 20px;
+  margin: 25px;
+  height: 170px;
+  width: 540px;
+}
+  @media  (max-width: 500px) {
+    .area{
+      position:relative;
+      margin-top: 20px;
+      margin: 25px;
+      height: 170px;
+      width: 350px;
+    }
+  }
+
+
+
+.model_button{
+  border: solid 3px rgb(87, 87, 87);
+
+}
+
+}
+
+
+
+
+
+
+
