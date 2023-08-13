@@ -6,232 +6,27 @@
   flex-direction: column;
   background-color: #2e2f2f;
 }
-/* タイトル */
-.name{
-  position: relative;
-  width: calc(100% / 3);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-@media  (max-width: 500px) {
-  .name{
-    display: none;
-    position: relative;
-    width: calc(100% / 3);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-}
-.names{
-  display: flex;
-}
-.title{
-  position: relative;
-  width: calc(100% / 3);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-@media  (max-width: 500px) {
-  .title{
-    position: relative;
-    width: calc(100% / 2);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
+h1 {
+  text-align: center;
 }
 
-.title_front{
+/* メインタイトル */
+.title_front_React{
   text-align: center;
   margin-top: 30px;
   margin-bottom: 30px;
   font-size:30px;
   color:#179eff;
 }
-
-.title_back{
+.title_front_Vue{
   text-align: center;
   margin-top: 30px;
   margin-bottom: 30px;
   font-size:30px;
   color:#ff5d17;
 }
-.test{
-  overflow: scroll;
-}
-.name2{
-  text-indent: 1rem;
-}
-.title2{
-  text-indent: 1rem;
-}
-.error{
-  background-color: #555;
-  color:#ff3c00;
-  overflow: scroll;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-}
-.subtitle{
-  text-indent: 1rem;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-}
-@media  (max-width: 600px) {
-  .subtitle{
-    text-indent: 1rem;
-    font-size: 2vmin;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-  }
-}
-.code{
-  background-color: #555;
-  color:#fff;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-}
-@media  (max-width: 600px) {
-  .code{
-    background-color: #555;
-    color:#fff;
-    font-size: 2vmin;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-  }
-}
-
-
 
 /* 選択メニュー */
-.box1 { /*【div】囲み枠部分*/
-    top:50px;
-    position: relative; /*必須*/
-    height: auto;
-    width: 80%;
-    margin: 0 auto;
-    border-radius: 30px 20px 30px 20px;
-    padding: 16px; /*内側の余白*/
-    border: 5px solid #aaaaaa; /*枠線）*/
-    background: #eee; /*背景色*/
-    color: #555; /*テキスト色*/
-  }
-  .box_main{
-    position:relative;
-    top:0px;
-    left:0px;
-    width: 100%;
-  }
-
-  .box1 .box_title { /*【span】タイトル部分*/
-    position: absolute; /*必須*/
-    top: -40px; /*囲み枠の上を基準として外側（上）に40px移動*/
-    left: 12px;  /*囲み枠の左を基準として内側（右）に12px移動*/
-    line-height: 40px; /*行の高さ*/
-    padding: 0 16px; /*左右の余白*/
-    border-radius: 30px 20px 30px 20px;
-    background: #aaa; /*背景色*/
-    color: #fff; /*テキスト色*/
-    font-weight: bold; /*フォント太字*/
-    font-size: 120%; /*フォントサイズ変更*/
-  }
-  .box_title1 { /*【span】タイトル部分*/
-    position: relative; /*必須*/
-    top: -40px; /*囲み枠の上を基準として外側（上）に40px移動*/
-    left: 90px;  /*囲み枠の左を基準として内側（右）に12px移動*/
-    line-height: 40px; /*行の高さ*/
-    padding: 0 16px; /*左右の余白*/
-    background: #010101; /*背景色*/
-    color: #fff; /*テキスト色*/
-    font-weight: bold; /*フォント太字*/
-    font-size: 120%; /*フォントサイズ変更*/
-    text-shadow: 2px 2px 5px #ffffff; /*テキストに影を付ける*/
-  }
-  .box1_2{
-    position: relative;
-    right: 30px;
-  }
-  @media  (max-width: 600px) {
-    .box1_2{
-      position: relative;
-      right: 0px;
-    }
-  }
-
-
-/* メモの内容 */
-.box_name_top { /*【p】本文部分*/
-    position:relative;
-    text-decoration: none;
-    color: inherit;
-    top:10px;
-    left:0px;
-    height: 100px;
-    width: 100%;
-  }
-  .box_name { /*【p】本文部分*/
-    position:relative;
-    text-decoration: none;
-    color: inherit;
-    top: 0px;
-    left:0px;
-    height: 20px;
-    width: 100%;
-  }
-  .box1 .box_name  { /*【p】本文部分*/
-    position:relative;
-    width: 80%
-  }
-
-.box1 .box_hr{
-  color:#2e2f2f;
-  width: 400px;
-}
-
-.input_name{
-  border-radius: 0px 20px 0px 20px;
-}
-.input_title{
-    display: inline-block;
-    border-radius: 0px 20px 0px 20px;
-    height: 60px;
-    width: 75%;
-}
-.input_content{
-    display: inline-block;
-    border-radius: 0px 20px 0px 20px;
-    height: 400px;
-    width: 75%;
-}
-
-
-
-
-/* アコーディオンメニュ */
-h1 {
-  text-align: center;
-}
-
-/* .form {
-  margin-bottom: 20px;
-} */
-
-/* .form_group {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.form_group label {
-  flex-basis: 100px;
-  margin-right: 10px;
-} */
-
 input[type='text'],
 input[type='number'] {
   flex-grow: 1;
@@ -290,3 +85,268 @@ details[open] summary {
   border-bottom: 1px solid #aaa;
   margin-bottom: 0.5em;
 }
+.box1 { /*【div】囲み枠部分*/
+  top:50px;
+  position: relative; /*必須*/
+  height: auto;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 30px 20px 30px 20px;
+  padding: 16px; /*内側の余白*/
+  border: 5px solid #aaaaaa; /*枠線）*/
+  z-index: 1;
+  background: #eee; /*背景色*/
+  color: #555; /*テキスト色*/
+}
+.box_main{
+  position:relative;
+  top:0px;
+  left:0px;
+  width: 100%;
+}
+.box1 .box_title { /*【span】タイトル部分*/
+  position: absolute; /*必須*/
+  top: -40px; /*囲み枠の上を基準として外側（上）に40px移動*/
+  left: 12px;  /*囲み枠の左を基準として内側（右）に12px移動*/
+  line-height: 40px; /*行の高さ*/
+  padding: 0 16px; /*左右の余白*/
+  border-radius: 30px 20px 30px 20px;
+  background: #aaa; /*背景色*/
+  color: #fff; /*テキスト色*/
+  font-weight: bold; /*フォント太字*/
+  font-size: 120%; /*フォントサイズ変更*/
+}
+.box_title1 { /*【span】タイトル部分*/
+  position: relative; /*必須*/
+  top: -40px; /*囲み枠の上を基準として外側（上）に40px移動*/
+  left: 90px;  /*囲み枠の左を基準として内側（右）に12px移動*/
+  line-height: 40px; /*行の高さ*/
+  padding: 0 16px; /*左右の余白*/
+  background: #010101; /*背景色*/
+  color: #fff; /*テキスト色*/
+  font-weight: bold; /*フォント太字*/
+  font-size: 120%; /*フォントサイズ変更*/
+  text-shadow: 2px 2px 5px #ffffff; /*テキストに影を付ける*/
+}
+/* tab */
+.box1_1 :hover{
+  color: #0078e1;
+}
+.box1_2{
+  position: relative;
+  right: 30px;
+}
+@media  (max-width: 600px) {
+  .box1_2{
+    position: relative;
+    right: 0px;
+  }
+}
+
+
+/* 選択後の内容 */
+summary {
+  list-style: none;
+}
+/* chrome / Safari */
+summary::-webkit-details-marker {
+  display: none;
+}
+
+/* 登録したメモの表示 */
+.names{
+  height: 50px;
+  padding: 0 0 0 0;
+}
+.names :hover{
+  background-color: #aeaeae;
+  padding: 0 0 0 0;
+}
+.box{
+  display: flex;
+}
+.name{
+  position: relative;
+  width: calc(100% / 3);
+  white-space: nowrap;
+  line-height: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@media  (max-width: 500px) {
+  .name{
+    display: none;
+    position: relative;
+    width: calc(100% / 3);
+    white-space: nowrap;
+    line-height: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+}
+.title{
+  position: relative;
+  margin-left: 5px;
+  width: calc(100% / 3);
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 50px;
+  text-overflow: ellipsis;
+}
+@media  (max-width: 500px) {
+  .title{
+    position: relative;
+    width: calc(100% / 2);
+    white-space: nowrap;
+    overflow: hidden;
+    line-height: 50px;
+    text-overflow: ellipsis;
+  }
+
+}
+.sakuzyo{
+  position: relative;
+  height: 40px;
+  width: 80px;
+  margin-top: 5px;
+  background-color: #717171;
+  border-radius: 30px 20px 30px 20px;
+  transition: all .3s;
+}
+.sakuzyo_button {
+  position: relative;
+  height: 40px;
+  width: 80px;
+  background-color: #717171;
+  border-radius: 30px 20px 30px 20px;
+  color:#ffffff;
+  transition: all .3s;
+}
+.sakuzyo_button:hover {
+  background-color: #454545;
+}
+
+
+
+
+
+/* 詳細 */
+.name2{
+  text-indent: 1rem;
+}
+.title2{
+  text-indent: 1rem;
+}
+.error{
+  background-color: #555;
+  color:#ff3c00;
+  overflow: scroll;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+.subtitle{
+  text-indent: 1rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+@media  (max-width: 600px) {
+  .subtitle{
+    text-indent: 1rem;
+    font-size: 2vmin;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+}
+.code{
+  background-color: #555;
+  color:#fff;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+@media  (max-width: 600px) {
+  .code{
+    background-color: #555;
+    color:#fff;
+    font-size: 2vmin;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+}
+
+
+
+
+
+/* 登録画面 */
+
+
+.center{
+  text-align: center;
+}
+.input_name{
+  display: inline-block;
+  border-radius: 0px 20px 0px 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 75%;
+}
+.input_title{
+    display: inline-block;
+    border-radius: 0px 20px 0px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 60px;
+    width: 75%;
+}
+.input_content{
+    display: inline-block;
+    border-radius: 0px 20px 0px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 400px;
+    width: 75%;
+}
+
+
+
+
+
+
+
+
+
+
+
+.kinos{
+  position: relative;
+  height: 500px;
+  width: 100%;
+}
+.kinos_logo{
+  position: relative;
+  display: table-cell;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  width: auto;
+  top: 100px;
+  margin: 0 auto;
+}
+.No{
+  height: 40px;
+  width: 100%;
+  text-align:center;
+
+}
+.No_data{
+  width: auto;
+  color:#ff3c00;
+  text-align:center;
+  top:5px;
+}
+
+
+
+

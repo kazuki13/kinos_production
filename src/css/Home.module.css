@@ -6,58 +6,9 @@
   .title{
     color:rgb(0, 0, 0);
   }
-  .content{
-    position: relative;
-    width: 70%;
-    word-wrap: break-word;
-    color:rgb(0, 0, 0);    
-  }
-  /* 項目 */
-  .block{
-    display: flex;
-    justify-content:space-around;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-
-  .surround{
-    position: inherit;
-    color:rgb(87, 87, 87);
-    background-color:#79dcfd;
-    border-radius: 30px 20px 30px 20px;
-    width: 400px;
-    font-weight: bold;
-    text-align: center;
-  }
-  /* スマホ時の画面 */
-  @media  (max-width: 500px) {
-    .block{
-      display: block;
-      justify-content:center;
-      margin-left: 10%;
-      margin-right: 10%;
-      }
-    .surround{
-      position: inherit;
-      color:rgb(87, 87, 87);
-      background-color:#79dcfd;
-      border-radius: 30px 20px 30px 20px;
-      width: auto;
-      margin-top: 10px;
-      font-weight: bold;
-      text-align: center;
-    }
-
-
-  }
     
-  
-  
-  
-  
-  
-  
-  
+
+
   /* モーダルウィンドウ */
   .modal_open{
     position:relative;
@@ -67,19 +18,17 @@
     color: #fff;
   }
   .modal_open a{
-  
     padding: 5px;
     color: #fff;
   }
   /*** 以下モーダル用CSS ***/
   .modal{
+    position: fixed;
     width: 100%;
     height: 100%;
-    position: fixed;
     top: 0;
     left: 0;
     border: solid 3px rgb(87, 87, 87);
-  
   }
   .modal:not(:target) {
     opacity: 0;
@@ -93,52 +42,50 @@
   }
   .modal .overlay{
     display: block;
-    width: 100%;
-    height: 100%;
     position: absolute;
-    background-color: #000;
     opacity: 0.7;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
   }
 
   .modal_wrapper{
-    width: 100%;
-    max-width: 600px;
-    min-width: 300px;
-    height: 350px;
-    max-height: 550px;
-    background-color: #fff;
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 100%;
+    height: 350px;
+    max-width: 600px;
+    min-width: 300px;
+    max-height: 550px;
+    background-color: #fff;
     transform: translate(-50%, -50%);
     border: solid 3px rgb(87, 87, 87);
     border-radius: 30px 20px 30px 20px;
-  
-  
   }
   @media  (max-width: 500px) {
     .modal_wrapper{
-      width: 100%;
-      max-width: 400px;
-      min-width: 300px;
-      height: 350px;
-      max-height: 550px;
-      background-color: #fff;
       position: absolute;
       top: 50%;
       left: 50%;
+      height: 350px;
+      width: 100%;
+      max-width: 400px;
+      min-width: 300px;
+      max-height: 550px;
+      background-color: #fff;
       transform: translate(-50%, -50%);
       border: solid 3px rgb(87, 87, 87);
       border-radius: 30px 20px 30px 20px;
     }
   }
   .modal_contents{
+    position: relative;
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    position: relative;
   }
   .modal_content{
     margin: 10px;
@@ -173,12 +120,57 @@
       width: 350px;
     }
   }
-
-  
-  
   .model_button{
     border: solid 3px rgb(87, 87, 87);
-  
+  }
+
+
+
+
+  .content{
+    position: relative;
+    word-wrap: break-word;
+    width: 70%;
+    color:rgb(0, 0, 0);    
+  }
+  /* 項目 */
+  .block{
+    display: flex;
+    justify-content:space-around;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .surround{
+    position: inherit;
+    width: 400px;
+    font-weight: bold;
+    text-align: center;
+    color:rgb(87, 87, 87);
+    background-color:#79dcfd;
+    border-radius: 30px 20px 30px 20px;
+  }
+  /* スマホ時の画面 */
+  @media  (max-width: 500px) {
+    .block{
+      display: block;
+      justify-content:center;
+      margin-left: 10%;
+      margin-right: 10%;
+      }
+    .surround{
+      position: inherit;
+      margin-top: 10px;
+      width: auto;
+      font-weight: bold;
+      text-align: center;
+      color:rgb(87, 87, 87);
+      background-color:#79dcfd;
+      border-radius: 30px 20px 30px 20px;
+    }
+  }
+  .Home_menu:hover{
+    color: #465be4;
   }
 
 
@@ -193,6 +185,144 @@ body {
 .title{
   color:aliceblue;
 }
+
+
+
+/* モーダルウィンドウ */
+.modal_open{
+  position:relative;
+  margin: 0 auto;
+  width:30px;
+  background-color: #666;
+  color: #fff;
+}
+.modal_open :hover{
+  color:#79dcfd;
+}
+.modal_open a{
+  padding: 5px;
+  color: #fff;
+}
+/*** 以下モーダル用CSS ***/
+.modal{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: solid 3px rgb(87, 87, 87);
+
+}
+.modal:not(:target) {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+.modal:target{
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+.modal .overlay{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.7;
+}
+.modal_wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 350px;
+  width: 100%;
+  max-width: 600px;
+  min-width: 300px;
+  max-height: 550px;
+  background-color: #fff;
+  transform: translate(-50%, -50%);
+  border: solid 3px rgb(87, 87, 87);
+  border-radius: 30px 20px 30px 20px;
+}
+
+@media  (max-width: 500px) {
+  .modal_wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    max-width: 400px;
+    min-width: 300px;
+    height: 350px;
+    max-height: 550px;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+    border: solid 3px rgb(87, 87, 87);
+    border-radius: 30px 20px 30px 20px;
+  }
+}
+
+
+.modal_contents{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.modal_content{
+  margin: 10px;
+  text-align: center;  
+  font-size: 30px;
+  color:#ffffff;
+  background-color: #666;
+  border-radius: 30px 20px 30px 20px;
+}
+.modal_content a{
+  position: absolute;
+
+}
+.modal_close{
+  position: absolute;
+  margin: 10px;
+  right: 25px;
+  text-decoration: none;
+  color:#ffffff;
+}
+.modal_button{
+  display: flex;
+}
+
+
+
+
+.area{
+  position:relative;
+  margin-top: 20px;
+  margin: 10px 25px;
+  height: 170px;
+  width: 540px;
+}
+  @media  (max-width: 500px) {
+    .area{
+      position:relative;
+      margin-top: 20px;
+      margin: 25px;
+      height: 170px;
+      width: 350px;
+    }
+  }
+
+
+
+.model_button{
+  border: solid 3px rgb(87, 87, 87);
+
+}
+
+
 .content{
   position: relative;
   width: 70%;
@@ -239,146 +369,58 @@ body {
 
 
 }
-
-  
-  
-
-
-
-
-
-
-
-
-.modal_open{
-  position:relative;
-  margin: 0 auto;
-  width:30px;
-  background-color: #666;
-  color: #fff;
+.Home_menu:hover{
+  color: #465be4;
 }
-.modal_open a{
-
-  padding: 5px;
-  color: #fff;
-}
-/*** 以下モーダル用CSS ***/
-.modal{
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  border: solid 3px rgb(87, 87, 87);
-
-}
-.modal:not(:target) {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.5s, visibility 0.5s;
-}
-.modal:target{
-  opacity: 1;
-  visibility: visible;
-  transition: opacity 0.5s, visibility 0.5s;
-}
-.modal .overlay{
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background-color: #000;
-  opacity: 0.7;
-  top: 0;
-  left: 0;
-}
-.modal_wrapper{
-  width: 100%;
-  max-width: 600px;
-  min-width: 300px;
-  height: 350px;
-  max-height: 550px;
-  background-color: #fff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border: solid 3px rgb(87, 87, 87);
-  border-radius: 30px 20px 30px 20px;
-
 
 }
 
-@media  (max-width: 500px) {
-  .modal_wrapper{
-    width: 100%;
-    max-width: 400px;
-    min-width: 300px;
-    height: 350px;
-    max-height: 550px;
-    background-color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: solid 3px rgb(87, 87, 87);
-    border-radius: 30px 20px 30px 20px;
-  }
-}
 
 
-.modal_contents{
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
+
+/* サインアウトの時 */
+.kinos{
   position: relative;
+  height: 500px;
+  width: 100%;
 }
-.modal_content{
-  margin: 10px;
-  text-align: center;
-  
+.kinos_logo{
+  position: relative;
+  display: table-cell;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  width: auto;
+  top: 100px;
+  margin: 0 auto;
 }
-.modal_content a{
-  position: absolute;
-  font-size: 30px;
+.Google{
+  height: 100px;
+  width: 100%;
 }
-.modal_close{
-  position: absolute;
-  top: 5px;
-  right: 10px;
-  text-decoration: none;
-}
-
-
-.area{
-  position:relative;
-  margin-top: 20px;
-  margin: 25px;
-  height: 170px;
-  width: 540px;
-}
-  @media  (max-width: 500px) {
-    .area{
-      position:relative;
-      margin-top: 20px;
-      margin: 25px;
-      height: 170px;
-      width: 350px;
-    }
-  }
-
-
-
-.model_button{
-  border: solid 3px rgb(87, 87, 87);
+.Google_logo{
+  display: table-cell;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 50px;
+  width: auto;
+  margin: 0 auto;
+  top:25px;
 
 }
+.No{
+  height: 40px;
+  width: 100%;
+  text-align:center;
 
 }
-
-
-
-
-
-
+.No_data{
+  width: auto;
+  color:#ff3c00;
+  text-align:center;
+  top:5px;
+}
 
